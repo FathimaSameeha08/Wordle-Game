@@ -1,0 +1,260 @@
+
+.App {
+  text-align: center;
+  background-image: url('https://img.freepik.com/premium-photo/black-vintage-old-looking-crumpled-paper-background_231311-6647.jpg');
+  width: 100vw;
+  height: 100vh;
+  /* display: flex; */
+  color: white;
+}
+
+body {
+  padding: 0%;
+  margin: 0;
+}
+
+nav {
+  height: 90px;
+  /* width: 100%; */
+  margin: 0;
+  display: grid;
+  place-items: center;
+  margin-bottom: -40px;
+  
+}
+
+nav h1 {
+  margin: 0;
+  font-family:'Times New Roman', Times, serif;
+  color: white;
+  font-size: 45px;
+}
+.game {
+  width: 100vw;
+  height: calc(100vh - 170px);
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.board {
+  margin-top: 30px;
+  margin-bottom: -20px;
+  width: 450px;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+#button{
+  
+    background-color: #3c3c3c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding:  10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin:  2px; */
+    cursor: pointer; 
+}
+#button:hover{
+  background-color: rgb(86, 85, 85);
+}
+
+.letter {
+  flex: 33%;
+  height: 35px;
+  border: 1px solid rgb(120, 120, 120);
+  background-color: #3c3c3c81;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#correct {
+  background-color: #528d4e;
+}
+
+#almost {
+  background-color: #b49f39;
+}
+
+#error {
+  background-color: #3a393c;
+}
+
+.keyboard {
+  width: 700px;
+  height: 200px;
+  margin-top: 60px;
+}
+
+.line1 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin: 5px;
+}
+.line2 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+.line3 {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 5px;
+}
+
+.key {
+  width: 50px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background-color: rgb(174, 167, 167);
+  color: rgb(1, 0, 0);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+}
+
+#big {
+  width: 100px;
+}
+#disabled {
+  background-color: #3a393c;
+}
+
+@media screen and ( max-width:768px), (max-width: 480px) {
+  .App {
+    text-align: center;
+    background-image: url('https://img.freepik.com/premium-photo/black-vintage-old-looking-crumpled-paper-background_231311-6647.jpg');
+    width: 105vw;
+    height: 100vh;
+    /* display: flex; */
+    color: white;
+  }
+ body {
+  padding: 0%;
+  margin: 0;
+}
+
+nav {
+  height: 60px;
+  /* width: 100%; */
+  margin: 0;
+  display: grid;
+  place-items: center;
+  margin-bottom: -40px;
+  
+}
+
+
+.game {
+  width: 50vw;
+  height: 670px;
+  display: flex;
+  align-items: center;
+  padding-top: 50px;
+  flex-direction: column;
+}
+
+.board {
+  /* margin-top: 30px; */
+  /* margin-bottom: -20px; */
+  width: 350px;
+  padding-left:200px ;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.row {
+  flex: 33%;
+  display: flex;
+  flex-direction: row;
+  margin: 5px;
+}
+#button{
+  
+    background-color: #3c3c3c;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    padding:  10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    /* margin:  2px; */
+    cursor: pointer; 
+}
+
+
+.letter {
+  flex: 33%;
+  height: 35px;
+  border: 1px solid rgb(120, 120, 120);
+  background-color: #3c3c3c81;
+  margin: 5px;
+  display: grid;
+  place-items: center;
+  font-size: 30px;
+  font-weight: bolder;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.keyboard {
+  width: 400px;
+  height: 200px;
+  margin-top: 40px;
+  padding-left: 209px;
+}
+
+
+
+.key {
+  width: 50px;
+  height: 40px;
+  margin: 5px;
+  border-radius: 4px;
+  display: grid;
+  place-items: center;
+  font-size: 20px;
+  background-color: rgb(174, 167, 167);
+  color: rgb(1, 0, 0);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  cursor: pointer;
+}
+
+
+
+}
+
